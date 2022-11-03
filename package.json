@@ -1,0 +1,72 @@
+{
+  "name": "smart-narrative",
+  "version": "1.0.0",
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/lab": "^5.0.0-alpha.104",
+    "@mui/material": "latest",
+    "axios": "^1.1.3",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "web3": "^1.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^29.1.2",
+    "@types/node": "^18.11.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router-dom": "latest",
+    "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.2.0",
+    "jest-environment-jsdom": "^29.2.1",
+    "prettier": "^2.7.1",
+    "react-test-renderer": "^18.2.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest -u --silent",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "prettify": "prettier --write 'src/**/*.tsx'",
+    "prettifyj": "prettier --write '**/*.json'",
+    "clean": "rm -rf node_modules",
+    "runlocal": "serve -s build",
+    "s3": "cd build && yarn build && aws s3 sync ./ s3://switch.smartnarrative.network",
+    "s3prod": "cd build && yarn build && aws --profile wls s3 sync ./ s3://smartnarrative.network"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+export enum StringList {
+  MAIN_TITLE = 'Smart Narrative',
+  MAIN_SUBTITLE = 'Stories from data',
+  FOOTER_COPYRIGHT = '©2022 WL Solutions LLC. All Rights Reserved.',
+  FOOTER_TRADEMARK = 'Smart Narrative is a registered trademark.',
+  MOBILE_FOOTER_COPYRIGHT_ONE = '©2022 WL Solutions LLC.',
+  MOBILE_FOOTER_COPYRIGHT_TWO = 'All Rights Reserved.',
+  MOBILE_FOOTER_TRADEMARK = 'Smart Narrative is a registered trademark.',
+  NETWORK_IMAGE = 'https://smartnarrative.network/images/network.jpg',
+  NETWORK_LINK = '/network',
+  NETWORK_LABEL = 'NETWORK',
+  NETWORK_COPY = 'A smart narrative contains data from event streams. Each stream forms a story. In this example, NFTs on the Ethereum Goerli testnet represent three types of stories: financial, systems and marketing. Click a story to see the data stored on IPFS.',
+  ETH_MASTER_TOKEN_ID = '100',
+  ETH_FIRST_TOKEN_ID = '1000',
+}
