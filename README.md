@@ -2,12 +2,11 @@
 
 Deploy an ERC721 smart contract and mint a series of NFTs with links to metadata. Each NFT points to an object whose properties represent a data snapshot taken at a given point in time.
 
-[Smart Narrative](https://smartnarrative.network/)
-
-
 ![](https://smartnarrative.network/home_page.jpg)
 
-Network page:
+Click on home page for network view:
+
+[Smart Narrative](https://smartnarrative.network/)
 
 ![](https://smartnarrative.network/screenshot_network.jpg)
 
