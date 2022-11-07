@@ -12,4 +12,6 @@ export enum StringList {
   NETWORK_COPY = 'A smart narrative contains data from event streams. Each stream forms a story. In this example, NFTs on the Ethereum Goerli testnet represent three types of stories: financial, systems and marketing. Click a story to see the data stored on IPFS.',
   ETH_MASTER_TOKEN_ID = '100',
   ETH_FIRST_TOKEN_ID = '1000',
+  GITHUB_LINK = 'https://github.com/woodylewis/nft-financial-reporting-app',
+  LINKEDIN_LINK = 'https://www.linkedin.com/in/woodylewismba/',
 }
