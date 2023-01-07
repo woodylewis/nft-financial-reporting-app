@@ -54,7 +54,9 @@
     "clean": "rm -rf node_modules",
     "runlocal": "serve -s build",
     "s3": "cd build && yarn build && aws s3 sync ./ s3://switch.smartnarrative.network",
-    "s3prod": "cd build && yarn build && aws --profile wls s3 sync ./ s3://smartnarrative.network"
+    "s3prod": "cd build && yarn build && aws --profile wls s3 sync ./ s3://smartnarrative.network",
+    "ci": "aws --profile wls cloudfront create-invalidation --distribution-id E2IZPDDY7RKS96 --paths '/*'",
+    "gi": "aws --profile wls cloudfront get-invalidation --distribution-id E2IZPDDY7RKS96 --id "
   },
   "browserslist": {
     "production": [

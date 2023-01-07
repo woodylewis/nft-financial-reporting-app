@@ -1,7 +1,7 @@
 const config = {
-  INFURA_PROVIDER: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-  CONTRACT_ADDRESS: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-  WALLET_ADDRESS: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+  INFURA_PROVIDER: 'https://goerli.infura.io/v3/413b9626a3c94013b63dcc572b6d7138',
+  CONTRACT_ADDRESS: '0x454080A6f31cDA75Fa40828767014ECbc5CA6A8a',
+  WALLET_ADDRESS: '0xC7f9007E54E6B01F884ece89272759F114e2A4B5',
 };
 
 export default config;
