@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RDFSoftwareApplication /> it matches the snapshot 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    {
+      "__html": "{"@context":"https://schema.org","@id":"DSFController","@type":"SoftwareApplication","mainEntity":{"@id":"SNNetwork","@type":"Consortium"}}",
+    }
+  }
+  type="application/ld+json"
+/>
+`;

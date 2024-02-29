@@ -1,16 +1,22 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
+import RDFSoftwareApplication from '../../schema/RDFSoftwareApplication/RDFSoftwareApplication';
 import { Store } from '../Store/Store';
-
 import Gateway from '../Gateway/Gateway';
+
+const id = 'SemanticSwitch';
+const mainEntityId = 'SmartNarrativeNetwork';
 
 const App = () => {
   return (
-    <Container maxWidth='md'>
-      <Store>
-        <Gateway />
-      </Store>
-    </Container>
+    <div>
+      <RDFSoftwareApplication id={id} mainEntityId={mainEntityId} />
+      <Container maxWidth='md'>
+        <Store>
+          <Gateway />
+        </Store>
+      </Container>
+    </div>
   );
 };
 

@@ -13,10 +13,10 @@ const EthereumService = () => {
         .call({ from: tokenContext.contextWallet });
       const ipfsResponse = await axios({
         headers: {
-          'Accept': 'text/plain'
+          Accept: 'text/plain',
         },
         method: 'get',
-        url: ipfsHash
+        url: ipfsHash,
       });
       const { data } = ipfsResponse;
       return data;

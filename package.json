@@ -12,7 +12,9 @@
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest",
+    "react-schemaorg": "^2.0.0",
     "react-scripts": "latest",
+    "schema-dts": "^1.1.2",
     "web3": "^1.8.0"
   },
   "devDependencies": {
