@@ -2,6 +2,8 @@ import React, { createContext, useContext, useState, FunctionComponent, ReactNod
 import PropTypes from 'prop-types';
 import NFT from '../../types/NFT';
 
+import RDFEntryPoint from '../../schema/RDFEntryPoint/RDFEntryPoint';
+
 import Web3 from 'web3';
 /* eslint-disable @typescript-eslint/no-var-requires */
 const snftABI = require('../../services/abi.json');
@@ -12,6 +14,9 @@ const web3 = new Web3(new Web3.providers.HttpProvider(testnet));
 web3.eth.defaultAccount = config.WALLET_ADDRESS;
 const wallet = web3.eth.defaultAccount;
 const contract = new web3.eth.Contract(snftABI, config.CONTRACT_ADDRESS);
+
+const id = 'AppContext';
+const appId = 'SmartNarrative';
 
 export const SNNContext = createContext({
   contextContract: contract,
@@ -55,20 +60,23 @@ export const Store: FunctionComponent<StoreProps> = ({ children }) => {
   };
 
   return (
-    <SNNContext.Provider
-      value={{
-        contextContract: contract,
-        contextWallet: wallet,
-        tokensLoaded: tokenState,
-        tokenMap: tokens,
-        setToken: setToken,
-        getToken: getToken,
-        setTokenMetaData: setTokenMetaData,
-        setTokensLoaded: setTokensLoaded,
-      }}
-    >
-      {children}
-    </SNNContext.Provider>
+    <div>
+      <RDFEntryPoint id={id} appId={appId} />
+      <SNNContext.Provider
+        value={{
+          contextContract: contract,
+          contextWallet: wallet,
+          tokensLoaded: tokenState,
+          tokenMap: tokens,
+          setToken: setToken,
+          getToken: getToken,
+          setTokenMetaData: setTokenMetaData,
+          setTokensLoaded: setTokensLoaded,
+        }}
+      >
+        {children}
+      </SNNContext.Provider>
+    </div>
   );
 };
 

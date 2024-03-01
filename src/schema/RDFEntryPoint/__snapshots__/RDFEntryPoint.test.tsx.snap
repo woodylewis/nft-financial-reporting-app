@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RDFEntryPoint /> it matches the snapshot 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    {
+      "__html": "{"@context":"https://schema.org","@id":"DSFSwitch","@type":"EntryPoint","actionApplication":{"@id":"SemanticSwitch","@type":"SoftwareApplication"}}",
+    }
+  }
+  type="application/ld+json"
+/>
+`;

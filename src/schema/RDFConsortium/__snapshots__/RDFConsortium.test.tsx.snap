@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RDFConsortium /> it matches the snapshot 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    {
+      "__html": "{"@context":"https://schema.org","@id":"DSFNetwork","@type":"Consortium","member":[{"@id":"member1","@type":"Organization"},{"@type":"Organization"}]}",
+    }
+  }
+  type="application/ld+json"
+/>
+`;

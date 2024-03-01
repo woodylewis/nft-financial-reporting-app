@@ -4,8 +4,8 @@ import RDFSoftwareApplication from '../../schema/RDFSoftwareApplication/RDFSoftw
 import { Store } from '../Store/Store';
 import Gateway from '../Gateway/Gateway';
 
-const id = 'SemanticSwitch';
-const mainEntityId = 'SmartNarrativeNetwork';
+const id = 'SmartNarrative';
+const mainEntityId = 'AppInstance';
 
 const App = () => {
   return (
