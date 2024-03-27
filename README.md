@@ -4,7 +4,7 @@ Deploy an ERC721 smart contract and mint a series of NFTs with links to metadata
 
 ![](https://smartnarrative.network/home_page.jpg)
 
-Click on home page for network view:
+Click the home page graphic for network view:
 
 [Smart Narrative](https://smartnarrative.network/)
 
